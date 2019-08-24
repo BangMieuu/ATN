@@ -5,7 +5,7 @@ $user= 'root';
 $pass= '';
 $db='atn';
 
-$con=pg_connect($host,$user,$pass,$db);
+$con=mysqli_connect($host,$user,$pass,$db);
 if($con)
    echo 'connected to my db database successfully';
 
