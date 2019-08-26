@@ -66,7 +66,7 @@
                                 </script> 
             </tr>
         </table>
-        
+        ?>
         <form action="add.php" method="POST">
             <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
             <input class="input-information" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
