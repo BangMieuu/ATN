@@ -6,7 +6,7 @@
 </head>
 <body>
       <div id="frm">
-          <form action="process.php" method="POST" > 
+          <form action="index.php" method="POST" > 
                 <p>
                    <label>Username:</label>
                    <input type="text" id="user" name="user" /> 
