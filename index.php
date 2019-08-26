@@ -44,14 +44,14 @@ function w3_close() {
       <img src="C:\xampp\htdocs\atn\Toys\Teddy.jpg" alt="Teddy" style="width:100%">
 	<br>
 	<br>
-	<a> The most comfortable stuffed teddy bear of all time <br> </a> 
+	<a> The most comfortable stuffed teddy bear of all time </a> 
       <p> 250.000 VND </p>
     </div>
 <div class="w3-quarter">
       <img src="C:\xampp\htdocs\atn\Toys\R2D2.jpg" alt="Robot" style="width:115%">
 	<br>
 	<br>
-	<a> Everyone like Starwar series so why not having this R2D2 <br> </a> 
+	<a> Everyone like Starwar series so why not having this R2D2 </a> 
       <p> 650.000 VND</p>
     </div>
 <div class="w3-quarter">
