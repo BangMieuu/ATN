@@ -65,38 +65,6 @@
 //            $result  = mysqli_query($this->conn,$query);
 //		$rowcount = mysqli_num_rows($result);
 //		return $rowcount;	
-	}
-        
-        function add($query, $name, $code, $image, $price) {
-           $result = $this->conn->prepare($query);
-           $result->bindParam(':name', $name);
-           $result->bindParam(':code', $code);
-           $result->bindParam(':image', $image);
-           $result->bindParam(':price', $price);
-           if ($result->execute()) {
-               return true;
-           } else {
-                die($result->error);
-           }
-//            $result = mysqli_query($this->conn, $query);
-//            return $result;
-        }
-        
-        function delete($query, $code) {
-            $result = $this->conn->prepare($query);
-            $result->bindParam(':code', $code);
-            if ($result->execute()) {
-                return true;
-            } else {
-                die($result->error);
-            }
-        }
-        
-        function printError() {
-            return mysqli_error($this->conn);
-        }
-}
-	
 
 // $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=ATN', 'root', '');
 //		echo "done";
