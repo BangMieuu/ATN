@@ -46,7 +46,7 @@
                             ?> 
                                 <script>
                                     alert("Added successful!");
-                                    window.location.href = "/index.php";
+                                    window.location.href = "index.php";
                                 </script>
                             <?php
                         }
