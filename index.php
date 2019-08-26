@@ -42,6 +42,7 @@ function w3_close() {
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
 <div class="w3-quarter">
       <img src="C:\xampp\htdocs\atn\Toys\Teddy.jpg" alt="Teddy" style="width:100%">
+	<a> The most favorite teddy for boys and girls
       <p> 250.000 VND </p>
     </div>
 <div class="w3-quarter">
