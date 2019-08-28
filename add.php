@@ -53,7 +53,6 @@
             }
              ?>
         <form action="add.php" method="POST">
-            <input class="input-information" type="text" width="300" height="100" name="id" placeholder="id"> <br>
             <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
             <input class="input-information" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
             <input class="input-information" type="text" width="300" height="100" name="description" placeholder="Description"> <br>

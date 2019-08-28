@@ -45,7 +45,7 @@ function w3_close() {
                  <tr>
         <?php
             require_once 'Data.php';
-            $sql = "SELECT * FROM items"; 
+            $sql = "SELECT * FROM product"; 
         $stmt = $pdo->prepare($sql); 
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
