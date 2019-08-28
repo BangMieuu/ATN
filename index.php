@@ -1,13 +1,13 @@
 <!Doctype html>
 <html>
 <head>
-	<title>ATN's Store</title>
+  <title>ATN's Store</title>
 <meta charset="UTF -8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <style>
-	body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 </style>
 </head>
@@ -57,8 +57,8 @@ function w3_close() {
       <img src="C:\xampp\htdocs\atn\Toys\ThanosGaunt.jpg" alt="Gauntlet" style="width:115%">
       <p>6.500.000 VND </p>
     </div> -->
-    <table>
-      <tr>
+     <table>
+                 <tr>
         <?php 
         require_once 'Data.php';
    $sql = "SELECT * FROM product"; 
@@ -69,11 +69,9 @@ function w3_close() {
             foreach ($resultSet as $row) {
             ?>
   <tr>
-    <th class="Bz"><?= $row['productid']?></th> 
-    <th class="Bz"><?= $row['image']?></th> 
     <th class="Bz"><?= $row['name']?></th>
     <th class="Bz"><?= $row['price']?></th>
-    <th class="Bz"><?= $row['detail']?></th>
+    <th class="Bz"><?= $row['Description']?></th>
  <br>
   </tr>
   <tr>
@@ -83,6 +81,6 @@ function w3_close() {
 }
 ?>
       </tr>
-    </table>
+        </table>
 </body>
 </html>

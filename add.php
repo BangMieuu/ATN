@@ -71,11 +71,9 @@
             foreach ($resultSet as $row) {
             ?>
   <tr>
-    <th class="Bz"><?= $row['productid']?></th> 
-    <th class="Bz"><?= $row['image']?></th> 
     <th class="Bz"><?= $row['name']?></th>
     <th class="Bz"><?= $row['price']?></th>
-    <th class="Bz"><?= $row['detail']?></th>
+    <th class="Bz"><?= $row['Description']?></th>
  <br>
   </tr>
   <tr>
