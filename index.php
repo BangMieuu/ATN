@@ -56,6 +56,7 @@ function w3_close() {
   <tr>
   </tr>
 <?php
+}
 ?>
 
       </tr>
