@@ -55,7 +55,7 @@
         <form action="add.php" method="POST">
             <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
             <input class="input-information" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
-            <input class="input-information" type="text" width="300" height="100" name="description" placeholder="Description"> <br>
+            <input class="input-information" type="text" width="300" height="100" name="descrip" placeholder="Description"> <br>
             <button type="submit" value="Add" name="submit">Add</button>
             <button><a href="index.php">Back</a></button>
         </form>
