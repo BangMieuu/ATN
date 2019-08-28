@@ -53,10 +53,10 @@ function w3_close() {
             foreach ($resultSet as $row) {
             ?>
   <tr>
-    <th class="Bz"><?= $row['id']?></th>
-    <th class="Bz"><?= $row['name']?></th>
+    <th class="Bz"><?= $row['productid']?></th>
+    <th class="Bz"><?= $row['proname']?></th>
     <th class="Bz"><?= $row['price']?></th>
-    <th class="Bz"><?= $row['description']?></th>
+    <th class="Bz"><?= $row['descrip']?></th>
  <br>
   </tr>
   <tr>
