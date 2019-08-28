@@ -40,7 +40,7 @@
                         }
                         else
                         {
-                            $sql = "INSERT INTO product(id, name, price, description) VALUES ('$id','$name','$price','$descrip')";
+                            $sql = "INSERT INTO product(proname, price, description) VALUES ('$name','$price','$descrip')";
                             pg_query($conn,$sql);
                             ?> 
                                 <script>
@@ -70,7 +70,7 @@
                  <tr>
         <?php
             require_once 'Data.php';
-            $sql = "SELECT * FROM items"; 
+            $sql = "SELECT * FROM product"; 
         $stmt = $pdo->prepare($sql); 
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
