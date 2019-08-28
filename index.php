@@ -36,6 +36,12 @@ function w3_close() {
     <div class="w3-center w3-padding-16"> Welcome to ATN's store </div>
   </div>
      <table>
+               <tr>
+                 <th>ID</th>
+                 <th>Name</th>
+                 <th>Price</th>
+                 <th>Description</th>
+               </tr>
                  <tr>
         <?php
             require_once 'Data.php';
