@@ -60,10 +60,11 @@
             <button><a href="index.php">Back</a></button>
         </form>
         <table>
+         <table>
                  <tr>
-        <?php 
-        require_once 'Data.php';
-   $sql = "SELECT * FROM product"; 
+        <?php
+            require_once 'Data.php';
+            $sql = "SELECT * FROM items"; 
         $stmt = $pdo->prepare($sql); 
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
@@ -78,14 +79,13 @@
  <br>
   </tr>
   <tr>
-    
   </tr>
 <?php
 }
 ?>
+
       </tr>
-        </table>
-        
+      </table>
     </div>
 </body>
 
