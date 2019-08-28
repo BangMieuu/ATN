@@ -60,6 +60,7 @@ function w3_close() {
 
 
       </tr>
-        </table>
+      </table>
+</div>
 </body>
 </html>
