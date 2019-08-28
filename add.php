@@ -53,6 +53,7 @@
             }
              ?>
         <form action="/add.php" method="POST">
+            <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="ID"> <br>
             <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
             <input class="input-information" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
             <input class="input-information" type="text" width="300" height="100" name="descrip" placeholder="Description"> <br>
@@ -71,6 +72,7 @@
             foreach ($resultSet as $row) {
             ?>
   <tr>
+    <th class="Bz"><?= $row['id']?></th>
     <th class="Bz"><?= $row['name']?></th>
     <th class="Bz"><?= $row['price']?></th>
     <th class="Bz"><?= $row['Description']?></th>
