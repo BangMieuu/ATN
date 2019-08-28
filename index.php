@@ -36,37 +36,53 @@ function w3_close() {
     <div class="w3-center w3-padding-16"> Welcome to ATN's store </div>
   </div>
 
- <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+ <!-- !PAGE CONTENT! --><!-- 
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px"> -->
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <!-- <div class="w3-row-padding w3-padding-16 w3-center" id="toys">
 <div class="w3-quarter">
       <img src="C:\xampp\htdocs\atn\Toys\Teddy.jpg" alt="Teddy" style="width:100%">
-	<br>
-	<br>
-	<a> The most comfortable stuffed teddy bear of all time </a> 
+      <br>
       <p> 250.000 VND </p>
     </div>
 <div class="w3-quarter">
       <img src="C:\xampp\htdocs\atn\Toys\R2D2.jpg" alt="Robot" style="width:115%">
-	<br>
-	<br>
-	<a> Everyone like Starwar series so why not having this R2D2 </a> 
       <p> 650.000 VND</p>
     </div>
 <div class="w3-quarter">
       <img src="C:\xampp\htdocs\atn\Toys\ThanosPop.jpg" alt="Figure" style="width:115%">
-	<br>
-	<br>
-	<a> The most favorite figure brand in this world, featuring Thanos from the Avenger End Game series </a>
     <p> 160.000 VND</p>
     </div>
 <div class="w3-quarter">
       <img src="C:\xampp\htdocs\atn\Toys\ThanosGaunt.jpg" alt="Gauntlet" style="width:115%">
-	<br>
-	<br>
-	<a> The one and only item that can wiped all the planet in a single snap ! Why not give it a try ? </a>
       <p>6.500.000 VND </p>
-    </div>
+    </div> -->
+    <table>
+      <tr>
+        <?php 
+        require_once 'Data.php';
+   $sql = "SELECT * FROM product"; 
+        $stmt = $pdo->prepare($sql); 
+        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+        $stmt->execute();
+        $resultSet = $stmt->fetchAll();
+            foreach ($resultSet as $row) {
+            ?>
+  <tr>
+    <th class="Bz"><?= $row['productid']?></th> 
+    <th class="Bz"><?= $row['image']?></th> 
+    <th class="Bz"><?= $row['name']?></th>
+    <th class="Bz"><?= $row['price']?></th>
+    <th class="Bz"><?= $row['detail']?></th>
+ <br>
+  </tr>
+  <tr>
+    
+  </tr>
+<?php
+}
+?>
+      </tr>
+    </table>
 </body>
 </html>

@@ -59,6 +59,33 @@
             <button type="submit" value="Add" name="submit">Add</button>
             <button><a href="index.php">Back</a></button>
         </form>
+        <table>
+                 <tr>
+        <?php 
+        require_once 'Data.php';
+   $sql = "SELECT * FROM product"; 
+        $stmt = $pdo->prepare($sql); 
+        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+        $stmt->execute();
+        $resultSet = $stmt->fetchAll();
+            foreach ($resultSet as $row) {
+            ?>
+  <tr>
+    <th class="Bz"><?= $row['productid']?></th> 
+    <th class="Bz"><?= $row['image']?></th> 
+    <th class="Bz"><?= $row['name']?></th>
+    <th class="Bz"><?= $row['price']?></th>
+    <th class="Bz"><?= $row['detail']?></th>
+ <br>
+  </tr>
+  <tr>
+    
+  </tr>
+<?php
+}
+?>
+      </tr>
+        </table>
         
 
     </div>
