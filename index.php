@@ -56,7 +56,7 @@ function w3_close() {
   <tr>
   </tr>
 <?php
-$show = "select * from product";
+$show = "select * from items";
 echo "$show"
 ?>;
 
