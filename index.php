@@ -50,7 +50,7 @@ function w3_close() {
     <th class="Bz"><?= $row['id']?></th>
     <th class="Bz"><?= $row['name']?></th>
     <th class="Bz"><?= $row['price']?></th>
-    <th class="Bz"><?= $row['Description']?></th>
+    <th class="Bz"><?= $row['description']?></th>
  <br>
   </tr>
   <tr>
