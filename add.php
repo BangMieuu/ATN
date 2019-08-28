@@ -40,7 +40,7 @@
                         }
                         else
                         {
-                            $sql = "INSERT INTO product(proname, price, description) VALUES ('$name','$price','$descrip')";
+                            $sql = "INSERT INTO product(proname, price, descrip) VALUES ('$name','$price','$descrip')";
                             pg_query($conn,$sql);
                             ?> 
                                 <script>
