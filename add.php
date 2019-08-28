@@ -40,7 +40,7 @@
                         }
                         else
                         {
-                            $sql = "INSERT INTO product(proname, price, descrip) VALUES ('$name','$price','$descrip')";
+                            $sql = "INSERT INTO product(id, proname, price, descrip) VALUES ('$id','$name','$price','$descrip')";
                             pg_query($conn,$sql);
                             ?> 
                                 <script>
@@ -52,7 +52,8 @@
                     }
             }
              ?>
-        <form action="/add.php" method="POST">
+        <form action="add.php" method="POST">
+            <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="id"> <br>
             <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
             <input class="input-information" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
             <input class="input-information" type="text" width="300" height="100" name="descrip" placeholder="Description"> <br>
@@ -75,7 +76,7 @@
     <th class="Bz"><?= $row['id']?></th>
     <th class="Bz"><?= $row['name']?></th>
     <th class="Bz"><?= $row['price']?></th>
-    <th class="Bz"><?= $row['Description']?></th>
+    <th class="Bz"><?= $row['description']?></th>
  <br>
   </tr>
   <tr>
