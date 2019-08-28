@@ -35,28 +35,6 @@ function w3_close() {
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
     <div class="w3-center w3-padding-16"> Welcome to ATN's store </div>
   </div>
-
- <!-- !PAGE CONTENT! --><!-- 
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px"> -->
-  <!-- First Photo Grid-->
-  <!-- <div class="w3-row-padding w3-padding-16 w3-center" id="toys">
-<div class="w3-quarter">
-      <img src="C:\xampp\htdocs\atn\Toys\Teddy.jpg" alt="Teddy" style="width:100%">
-      <br>
-      <p> 250.000 VND </p>
-    </div>
-<div class="w3-quarter">
-      <img src="C:\xampp\htdocs\atn\Toys\R2D2.jpg" alt="Robot" style="width:115%">
-      <p> 650.000 VND</p>
-    </div>
-<div class="w3-quarter">
-      <img src="C:\xampp\htdocs\atn\Toys\ThanosPop.jpg" alt="Figure" style="width:115%">
-    <p> 160.000 VND</p>
-    </div>
-<div class="w3-quarter">
-      <img src="C:\xampp\htdocs\atn\Toys\ThanosGaunt.jpg" alt="Gauntlet" style="width:115%">
-      <p>6.500.000 VND </p>
-    </div> -->
      <table>
                  <tr>
         <?php 
