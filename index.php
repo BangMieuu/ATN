@@ -47,17 +47,20 @@ function w3_close() {
             foreach ($resultSet as $row) {
             ?>
   <tr>
+    <th class="Bz"><?= $row['id']?></th>
     <th class="Bz"><?= $row['name']?></th>
     <th class="Bz"><?= $row['price']?></th>
     <th class="Bz"><?= $row['Description']?></th>
  <br>
   </tr>
   <tr>
-    
   </tr>
 <?php
-}
-?>
+$show = "select * from product";
+echo "$show"
+?>;
+
+
       </tr>
         </table>
 </body>
