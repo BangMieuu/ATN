@@ -44,10 +44,8 @@ function w3_close() {
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
         $resultSet = $stmt->fetchAll();
-            foreach ($resultSet as $row) echo"$name
-            "{
+            foreach ($resultSet as $row){
             ?>
-
   <tr>
     <th class="Bz"><?= $row['id']?></th>
     <th class="Bz"><?= $row['name']?></th>
