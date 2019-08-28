@@ -44,8 +44,10 @@ function w3_close() {
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
         $resultSet = $stmt->fetchAll();
-            foreach ($resultSet as $row) {
+            foreach ($resultSet as $row) echo"$name
+            "{
             ?>
+
   <tr>
     <th class="Bz"><?= $row['id']?></th>
     <th class="Bz"><?= $row['name']?></th>
@@ -56,9 +58,7 @@ function w3_close() {
   <tr>
   </tr>
 <?php
-$show = "select * from items";
-echo "$show"
-?>;
+?>
 
 
       </tr>
