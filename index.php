@@ -37,15 +37,14 @@ function w3_close() {
   </div>
      <table>
                  <tr>
-        <?php 
-        require_once 'Data.php';
-   $sql = "SELECT * FROM items"; 
+        <?php
+            require_once 'Data.php';
+            $sql = "SELECT * FROM items"; 
         $stmt = $pdo->prepare($sql); 
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
         $resultSet = $stmt->fetchAll();
-            foreach ($resultSet as $row) 
-            {
+            foreach ($resultSet as $row) {
             ?>
   <tr>
     <th class="Bz"><?= $row['id']?></th>
